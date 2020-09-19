@@ -130,6 +130,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hb8y9yHTIKZT3qhZsyZCVaud9y" />
@@ -165,7 +166,7 @@
       <workItem from="1600344339323" duration="2500000" />
       <workItem from="1600361389772" duration="5386000" />
       <workItem from="1600430924930" duration="4982000" />
-      <workItem from="1600510486141" duration="3013000" />
+      <workItem from="1600510486141" duration="10939000" />
     </task>
     <servers />
   </component>

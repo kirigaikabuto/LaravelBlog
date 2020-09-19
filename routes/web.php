@@ -15,3 +15,8 @@ Route::resource("posts","\App\Http\Controllers\PostsController");
 //    //return $id." ".$name;
 //    return view("pages.about");
 //});
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get("/dashboard",[\App\Http\Controllers\DashboardController::class,"index"]);

@@ -8,12 +8,16 @@
         {!!$post->body!!}
     </div>
     <hr>
-    <small>Written on{{$post->created_at}}</small>
+    <small>Written on{{$post->created_at}} by {{$post->user->name}}</small>
     <hr>
-    <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
+    @if(!Auth::guest())
+        @if(Auth::user()->id == $post->user_id)
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
 
-    {!! \Collective\Html\FormFacade::open(["action" => ["\App\Http\Controllers\PostsController@destroy",$post->id],"method"=>"POST", "class"=>"pull-right"]) !!}
-    {{ \Collective\Html\FormFacade::hidden("_method","DELETE") }}
-    {{ \Collective\Html\FormFacade::submit("Delete",["class"=>"btn btn-danger"]) }}
-    {!! \Collective\Html\FormFacade::close() !!}
+            {!! \Collective\Html\FormFacade::open(["action" => ["\App\Http\Controllers\PostsController@destroy",$post->id],"method"=>"POST", "class"=>"pull-right"]) !!}
+                {{ \Collective\Html\FormFacade::hidden("_method","DELETE") }}
+                {{ \Collective\Html\FormFacade::submit("Delete",["class"=>"btn btn-danger"]) }}
+            {!! \Collective\Html\FormFacade::close() !!}
+        @endif
+    @endif
 @endsection
