@@ -4,6 +4,9 @@
 @section("content")
     <a href="/posts">Go Back</a>
     <h3>{{$post->title}}</h3>
+    <img style="width: 100%;" src="/storage/cover_images/{{$post->cover_image}}"/>
+    <br>
+    <br>
     <div>
         {!!$post->body!!}
     </div>
