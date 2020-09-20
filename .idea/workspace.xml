@@ -146,6 +146,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/storage/cover_images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -166,7 +171,7 @@
       <workItem from="1600344339323" duration="2500000" />
       <workItem from="1600361389772" duration="5386000" />
       <workItem from="1600430924930" duration="4982000" />
-      <workItem from="1600510486141" duration="13521000" />
+      <workItem from="1600510486141" duration="13998000" />
     </task>
     <servers />
   </component>
